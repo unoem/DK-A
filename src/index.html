@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Task List Manager</h1>
+  </header>
+  <div id="add-list-container">
+    <p>Here you can add a list:</p>
+    <form id="add-list-form">
+      <input type="text" id="list-name" placeholder="New list name" maxlength="60" required>
+      <button id="add-list-btn">Add List</button>
+    </form>
+  </div>
+  <main>
+    <section id="task-lists-section">
+      <h2>Task Lists</h2>
+      <div id="filter-container">
+        <label for="filter-status">Filter Tasks:</label>
+        <select id="filter-status">
+          <option value="all">All</option>
+          <option value="todo">To Do</option>
+          <option value="doing">Doing</option>
+          <option value="done">Done</option>
+        </select>
+      </div>
+      <div id="task-lists-container">
+        <!-- Task list cards will be dynamically added here -->
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

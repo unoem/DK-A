@@ -1,0 +1,212 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #C7D8E6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #063970;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+#add-list-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#add-list-form input {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#add-list-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #1e88e5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-list-form button:hover {
+  background-color: #1565c0;
+}
+
+/* Task Lists Container */
+#task-lists-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Task List Card */
+.task-list-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.task-list-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.editable-list-name {
+  outline: none;
+  border-bottom: 1px dashed #1e88e5;
+}
+
+.remove-list-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.remove-list-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* Tasks Inside Task List */
+.tasks-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  background-color: #e3f2fd;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.editable-task-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  outline: none;
+}
+
+.editable-task-desc {
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  resize: vertical;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.task-status {
+  align-self: flex-start;
+  padding: 5px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.remove-task-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.remove-task-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* Add Task Form */
+.new-task-name,
+.new-task-desc {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-task-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #1e88e5;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-btn:hover {
+  background-color: #1565c0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #add-list-form input {
+      width: 100%;
+  }
+
+  #task-lists-container {
+      max-width: 100%;
+  }
+}
